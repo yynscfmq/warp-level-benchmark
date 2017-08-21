@@ -1,0 +1,109 @@
+[fangmq@mn0%yhstar 12_memory]$ nvcc -c local2.cu --ptxas-options=-v
+ptxas info    : 0 bytes gmem
+ptxas info    : Compiling entry function '_Z10local_1_30Pf' for 'sm_10'
+ptxas info    : Used 4 registers, 24 bytes smem, 4 bytes cmem[1], 120 bytes lmem
+ptxas info    : Compiling entry function '_Z10local_1_29Pf' for 'sm_10'
+ptxas info    : Used 58 registers, 24 bytes smem
+
+[fangmq@mn0%yhstar 12_memory]$ nvcc -c local2.cu --ptxas-options=-v -arch 'sm_35'
+ptxas info    : 0 bytes gmem
+ptxas info    : Compiling entry function '_Z10local_1_73Pf' for 'sm_35'
+ptxas info    : Function properties for _Z10local_1_73Pf
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Used 31 registers, 328 bytes cmem[0]
+ptxas info    : Compiling entry function '_Z10local_1_74Pf' for 'sm_35'
+ptxas info    : Function properties for _Z10local_1_74Pf
+    296 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Used 30 registers, 328 bytes cmem[0]
+
+[fangmq@mn0%yhstar 12_memory]$ nvcc -c local2.cu --ptxas-options=-v -arch 'sm_35'
+ptxas info    : 0 bytes gmem
+ptxas info    : Compiling entry function '_Z9local_2_4PfS_S_' for 'sm_35'
+ptxas info    : Function properties for _Z9local_2_4PfS_S_
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Used 26 registers, 344 bytes cmem[0]
+ptxas info    : Compiling entry function '_Z9local_2_8PfS_S_' for 'sm_35'
+ptxas info    : Function properties for _Z9local_2_8PfS_S_
+    256 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Used 30 registers, 344 bytes cmem[0]
+ptxas info    : Compiling entry function '_Z9local_2_2PfS_S_' for 'sm_35'
+ptxas info    : Function properties for _Z9local_2_2PfS_S_
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Used 14 registers, 344 bytes cmem[0]
+ptxas info    : Compiling entry function '_Z9local_2_6PfS_S_' for 'sm_35'
+ptxas info    : Function properties for _Z9local_2_6PfS_S_
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Used 49 registers, 344 bytes cmem[0]
+ptxas info    : Compiling entry function '_Z9local_2_5PfS_S_' for 'sm_35'
+ptxas info    : Function properties for _Z9local_2_5PfS_S_
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Used 35 registers, 344 bytes cmem[0]
+ptxas info    : Compiling entry function '_Z9local_2_9PfS_S_' for 'sm_35'
+ptxas info    : Function properties for _Z9local_2_9PfS_S_
+    328 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Used 31 registers, 344 bytes cmem[0]
+ptxas info    : Compiling entry function '_Z9local_2_3PfS_S_' for 'sm_35'
+ptxas info    : Function properties for _Z9local_2_3PfS_S_
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Used 19 registers, 344 bytes cmem[0]
+ptxas info    : Compiling entry function '_Z9local_2_7PfS_S_' for 'sm_35'
+ptxas info    : Function properties for _Z9local_2_7PfS_S_
+    200 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Used 31 registers, 344 bytes cmem[0]
+[fangmq@mn0%yhstar 12_memory]$ nvcc -c local2.cu --ptxas-options=-v 
+ptxas info    : 0 bytes gmem
+ptxas info    : Compiling entry function '_Z9local_2_4PfS_S_' for 'sm_10'
+ptxas info    : Used 10 registers, 40 bytes smem, 4 bytes cmem[1], 64 bytes lmem
+ptxas info    : Compiling entry function '_Z9local_2_8PfS_S_' for 'sm_10'
+ptxas info    : Used 18 registers, 40 bytes smem, 8 bytes cmem[1], 256 bytes lmem
+ptxas info    : Compiling entry function '_Z9local_2_2PfS_S_' for 'sm_10'
+ptxas info    : Used 10 registers, 40 bytes smem
+ptxas info    : Compiling entry function '_Z9local_2_6PfS_S_' for 'sm_10'
+ptxas info    : Used 16 registers, 40 bytes smem, 4 bytes cmem[1], 144 bytes lmem
+ptxas info    : Compiling entry function '_Z9local_2_5PfS_S_' for 'sm_10'
+ptxas info    : Used 15 registers, 40 bytes smem, 4 bytes cmem[1], 100 bytes lmem
+ptxas info    : Compiling entry function '_Z9local_2_9PfS_S_' for 'sm_10'
+ptxas info    : Used 18 registers, 40 bytes smem, 8 bytes cmem[1], 324 bytes lmem
+ptxas info    : Compiling entry function '_Z9local_2_3PfS_S_' for 'sm_10'
+ptxas info    : Used 9 registers, 40 bytes smem, 4 bytes cmem[1], 36 bytes lmem
+ptxas info    : Compiling entry function '_Z9local_2_7PfS_S_' for 'sm_10'
+ptxas info    : Used 16 registers, 40 bytes smem, 8 bytes cmem[1], 196 bytes lmem
+
+
+
+[fangmq@mn0%yhstar 12_memory]$ nvcc -c local2.cu --ptxas-options=-v 
+ptxas info    : 0 bytes gmem
+ptxas info    : Compiling entry function '_Z9local_3_2Pf' for 'sm_10'
+ptxas info    : Used 6 registers, 24 bytes smem, 8 bytes cmem[1], 8 bytes lmem
+
+
+[fangmq@mn0%yhstar 12_memory]$ nvcc -c local2.cu --ptxas-options=-v -arch 'sm_35'
+ptxas info    : 0 bytes gmem
+ptxas info    : Compiling entry function '_Z10local_3_16Pf' for 'sm_35'
+ptxas info    : Function properties for _Z10local_3_16Pf
+    64 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Used 20 registers, 328 bytes cmem[0]
+ptxas info    : Compiling entry function '_Z9local_3_4Pf' for 'sm_35'
+ptxas info    : Function properties for _Z9local_3_4Pf
+    16 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Used 15 registers, 328 bytes cmem[0]
+ptxas info    : Compiling entry function '_Z10local_3_64Pf' for 'sm_35'
+ptxas info    : Function properties for _Z10local_3_64Pf
+    256 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Used 30 registers, 328 bytes cmem[0]
+ptxas info    : Compiling entry function '_Z9local_3_8Pf' for 'sm_35'
+ptxas info    : Function properties for _Z9local_3_8Pf
+    32 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Used 15 registers, 328 bytes cmem[0]
+ptxas info    : Compiling entry function '_Z11local_3_128Pf' for 'sm_35'
+ptxas info    : Function properties for _Z11local_3_128Pf
+    512 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Used 30 registers, 328 bytes cmem[0]
+ptxas info    : Compiling entry function '_Z9local_3_2Pf' for 'sm_35'
+ptxas info    : Function properties for _Z9local_3_2Pf
+    8 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Used 15 registers, 328 bytes cmem[0]
+ptxas info    : Compiling entry function '_Z10local_3_32Pf' for 'sm_35'
+ptxas info    : Function properties for _Z10local_3_32Pf
+    128 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Used 30 registers, 328 bytes cmem[0]
